@@ -1,0 +1,22 @@
+[name]
+model_name=Yolo_FastestV2_V3_custom_phone_only
+
+[train-configure]
+epochs=300
+steps=150, 250
+batch_size=128
+subdivisions=1
+learning_rate=0.001
+
+[model-configure]
+pre_weights=None
+classes=1
+width=352
+height=352
+anchor_num=3
+anchors=22.41,23.14, 33.11,59.99, 59.28,108.37, 61.98,33.19, 113.92,61.40, 132.79,151.17
+
+[data-configure]
+train=./train.txt
+val=./val.txt
+names=./data/category.names
