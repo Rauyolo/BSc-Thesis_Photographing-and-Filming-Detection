@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="YoLo-FastestV2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/YoLo-FastestV2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/YoLo-FastestV2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-pthread" />
+			<Add option="-fopenmp" />
+			<Add option="-lpigpio" />
+			<Add option="-lrt" />
+			<Add directory="/usr/local/include/opencv4" />
+			<Add directory="/home/pi/ncnn/build/install/include/ncnn" />
+			<Add directory="/usr/local/include/MNN" />
+		</Compiler>
+		<Linker>
+			<Add option="`pkg-config --libs --cflags opencv4`" />
+			<Add option="-pthread" />
+			<Add option="-fopenmp" />
+			<Add option="-lpigpio" />
+			<Add option="-lrt" />
+			<Add library="/home/pi/ncnn/build/install/lib/libncnn.a" />
+			<Add library="/usr/local/lib/libMNN.so" />
+			<Add directory="/usr/local/lib/" />
+		</Linker>
+		<Unit filename="demo.cpp" />
+		<Unit filename="/home/pi/Desktop/src_files/include/yolo-fastestv2-ncnn.h" />
+		<Unit filename="/home/pi/Desktop/src_files/yolo-fastestv2-ncnn.cpp" />
+		<Unit filename="/home/pi/Desktop/src_files/include/yolo-fastestv2-mnn.h" />
+		<Unit filename="/home/pi/Desktop/src_files/yolo-fastestv2-mnn.cpp" />
+		<Unit filename="/home/pi/Desktop/src_files/include/targetbox.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
