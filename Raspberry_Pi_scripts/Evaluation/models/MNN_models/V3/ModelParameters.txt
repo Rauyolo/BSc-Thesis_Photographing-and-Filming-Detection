@@ -1,0 +1,135 @@
+For non-quantized camera model use:
+
+// enter location of .mnn file for MNN evaluation
+const char* mnnFile = "../models/MNN_models/V3/yolo-fastestv2-opt_camera.mnn";
+
+// folder where resulting PR curve data will be stored
+const char* destPath = "../models/MNN_models/V3/results/";
+
+const bool quantization = false;
+
+// enter anchor bias corresponding to the selected model
+const std::vector<float> anchors {24.53,31.09, 50.78,90.88, 56.70,46.87, 108.18,97.13, 141.29,177.30, 272.16,273.26};
+
+// true if camera and mobile phone class were combined in one in the model
+const bool camAndPhoneCombined = true;
+
+// order matters, use same as in the training
+const static std::string class_names[] = {
+    "Camera"
+};
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For quantized camera model use:
+
+// enter location of .mnn file for MNN evaluation
+const char* mnnFile = "../models/MNN_models/V3/yolo-fastestv2-int8_camera.mnn";
+
+// folder where resulting PR curve data will be stored
+const char* destPath = "../models/MNN_models/V3/results/";
+
+const bool quantization = true;
+
+// enter anchor bias corresponding to the selected model
+const std::vector<float> anchors {24.53,31.09, 50.78,90.88, 56.70,46.87, 108.18,97.13, 141.29,177.30, 272.16,273.26};
+
+// true if camera and mobile phone class were combined in one in the model
+const bool camAndPhoneCombined = true;
+
+// order matters, use same as in the training
+const static std::string class_names[] = {
+    "Camera"
+};
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For non-quantized mobile phone only model use:
+
+// enter location of .mnn file for MNN evaluation
+const char* mnnFile = "../models/MNN_models/V3/yolo-fastestv2-opt_phone_only.mnn";
+
+// folder where resulting PR curve data will be stored
+const char* destPath = "../models/MNN_models/V3/results/";
+
+const bool quantization = false;
+
+// enter anchor bias corresponding to the selected model
+const std::vector<float> anchors {22.41,23.14, 33.11,59.99, 59.28,108.37, 61.98,33.19, 113.92,61.40, 132.79,151.17};
+
+// true if camera and mobile phone class were combined in one in the model
+const bool camAndPhoneCombined = true;
+
+// order matters, use same as in the training
+const static std::string class_names[] = {
+    "Camera"
+};
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For quantized mobile phone only model use:
+
+// enter location of .mnn file for MNN evaluation
+const char* mnnFile = "../models/MNN_models/V3/yolo-fastestv2-int8_phone_only.mnn";
+
+// folder where resulting PR curve data will be stored
+const char* destPath = "../models/MNN_models/V3/results/";
+
+const bool quantization = true;
+
+// enter anchor bias corresponding to the selected model
+const std::vector<float> anchors {22.41,23.14, 33.11,59.99, 59.28,108.37, 61.98,33.19, 113.92,61.40, 132.79,151.17};
+
+// true if camera and mobile phone class were combined in one in the model
+const bool camAndPhoneCombined = true;
+
+// order matters, use same as in the training
+const static std::string class_names[] = {
+    "Camera"
+};
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For non-quantized person model use:
+
+// enter location of .mnn file for MNN evaluation
+const char* mnnFile = "../models/MNN_models/V3/yolo-fastestv2-opt_person.mnn";
+
+// folder where resulting PR curve data will be stored
+const char* destPath = "../models/MNN_models/V3/results/";
+
+const bool quantization = false;
+
+// enter anchor bias corresponding to the selected model
+const std::vector<float> anchors {11.12,28.20, 29.20,73.18, 54.68,154.09, 109.08,249.72, 181.63,110.14, 256.38,289.73};
+
+// true if camera and mobile phone class were combined in one in the model
+const bool camAndPhoneCombined = true;
+
+// order matters, use same as in the training
+const static std::string class_names[] = {
+    "Person"
+};
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For quantized person model use:
+
+// enter location of .mnn file for MNN evaluation
+const char* mnnFile = "../models/MNN_models/V3/yolo-fastestv2-int8_person.mnn";
+
+// folder where resulting PR curve data will be stored
+const char* destPath = "../models/MNN_models/V3/results/";
+
+const bool quantization = true;
+
+// enter anchor bias corresponding to the selected model
+const std::vector<float> anchors {11.12,28.20, 29.20,73.18, 54.68,154.09, 109.08,249.72, 181.63,110.14, 256.38,289.73};
+
+// true if camera and mobile phone class were combined in one in the model
+const bool camAndPhoneCombined = true;
+
+// order matters, use same as in the training
+const static std::string class_names[] = {
+    "Person"
+};
