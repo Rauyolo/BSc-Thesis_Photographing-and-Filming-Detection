@@ -1,0 +1,24 @@
+For non-quantized model use:
+
+// enter location of .mnn file for MNN evaluation
+const char* mnnFile = "../models/MNN_slim-320_model/slim-320.mnn";
+
+const bool quantization = false;
+
+// do not change
+const static std::string class_names[] = {
+    "Human_face"
+};
+
+
+For quantized model use:
+
+// enter location of .mnn file for MNN evaluation
+const char* mnnFile = "../models/MNN_slim-320_model/slim-320-quant-ADMM-50.mnn";
+
+const bool quantization = true;
+
+// do not change
+const static std::string class_names[] = {
+    "Human_face"
+};
