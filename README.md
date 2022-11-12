@@ -1,4 +1,7 @@
 # Photographing and Filming Detection
+<p align="center">
+<img src="examples.png" width="500" height="500">
+
 
 This repository includes scripts for the training and deployment of a photography and filming detection system. The training and NCNN conversion is done via **YOLO_notebook.ipynb** file. Due to copyright issues, the custom dataset that was created for the final model is not available in this repository and is available on request. The deployment is done on Raspberry Pi 4, which has OpenCV, NCNN, MNN, and pigpio libraries built and the scripts used on it are given in **Raspberry_Pi_scripts** folder. 
 
